@@ -55,7 +55,9 @@ shuttles:
 
 preprocessed_companies:
   type: pandas.ParquetDataset
-  filepath: data/02_intermediate/preprocessed_companies.pq
+  filepath: abfs://kedro/data/02_intermediate/preprocessed_companies.pq
+  # filepath: data/02_intermediate/preprocessed_companies.pq
+  credentials: az_creds
 
 preprocessed_shuttles:
   type: pandas.ParquetDataset
